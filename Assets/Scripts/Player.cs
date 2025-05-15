@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-           if(other.CompareTag("point"))
+           if(other.CompareTag("Point"))
             {
                 other.GetComponent<Animator>().SetTrigger("Sumir");
                 Destroy(other.gameObject, 0.5f);
